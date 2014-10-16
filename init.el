@@ -5,6 +5,10 @@
 ;; This is the first thing to get loaded.
 ;;
 
+;; This will load the installed packages when you start Emacs
+(package-initialize)
+(setq package-enable-at-startup nil)
+
 ;; load Org-mode from source when the ORG_HOME environment variable is set
 (when (getenv "ORG_HOME")
   (let ((org-lisp-dir (expand-file-name "lisp" (getenv "ORG_HOME"))))
