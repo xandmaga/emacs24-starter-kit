@@ -52,3 +52,4 @@ secret.org
 .*~
 agent/*
 /server*
+ido.last
